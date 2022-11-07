@@ -25,7 +25,7 @@ def main():
     file = st.file_uploader("Please upload a tomato leaf image", type=["jpg", "png"])
    
     if file is None:
-     st.text("Please upload an image")
+     st.text("Waiting...")
     else:
      image = Image.open(file)
      if st.button('Crop Health Assessment Result'):
