@@ -1,2 +1,8 @@
-sklearn
-pandas
+keras.models 
+load_model
+PIL 
+import Image
+ImageOps
+numpy
+tensorflow
+
