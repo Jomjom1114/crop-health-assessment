@@ -23,8 +23,11 @@ def main():
     st.title('Crop Health Assessment Web App')
 
     file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
+   
+    if file is None:
+    st.text("Please upload an image file")
+else:
     image = Image.open(file)
-
     if st.button('Crop Health Assessment Result'):
        result = pred(image)
 
