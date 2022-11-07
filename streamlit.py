@@ -22,10 +22,10 @@ def pred(image):
 def main():
     st.title('Crop Health Assessment Web App')
 
-    file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
+    file = st.file_uploader("Please upload a tomato leaf image", type=["jpg", "png"])
    
     if file is None:
-     st.text("Please upload an image file")
+     st.text("Please upload an image")
     else:
      image = Image.open(file)
      if st.button('Crop Health Assessment Result'):
