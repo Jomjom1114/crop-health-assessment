@@ -25,13 +25,11 @@ def main():
     file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
    
     if file is None:
-    st.text("Please upload an image file")
-else:
-    image = Image.open(file)
-    if st.button('Crop Health Assessment Result'):
+     st.text("Please upload an image file")
+    else:
+     image = Image.open(file)
+     if st.button('Crop Health Assessment Result'):
        result = pred(image)
-
-       #st.write(result)
        if (result > 0.5):
          st.write('Diseased')
        else:
