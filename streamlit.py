@@ -46,9 +46,9 @@ def main():
      if st.button('Binary Classification'):
        result = pred(image)
        if (result > 0.5):
-         st.write('Diseased')
+         st.write('The Plant Leaf Is Diseased')
        else:
-         st.write('Healthy')
+         st.write('The plant Leaf Is Healthy')
          
      if st.button('Multiclass Classification'):
        result = pred2(image)
