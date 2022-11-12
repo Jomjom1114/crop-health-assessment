@@ -43,14 +43,14 @@ def main():
    
     else:
      image = Image.open(file)
-     if st.button('Crop Health Assessment Result'):
+     if st.button('Binary Classification'):
        result = pred(image)
        if (result > 0.5):
          st.write('Diseased')
        else:
          st.write('Healthy')
          
-     if st.button('Multi Class Classification'):
+     if st.button('Multiclass Classification'):
        result = pred2(image)
 
        st.write(result)
