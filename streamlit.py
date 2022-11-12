@@ -36,7 +36,7 @@ def pred2(image):
 def main():
     st.title('Crop Health Assessment Web App')
 
-    file = st.file_uploader("Please upload a tomato leaf image", type=["jpg", "png"])
+    file = st.file_uploader("Please Upload A Tomato Leaf Image", type=["jpg", "png","jpeg"])
    
     if file is None:
      st.text("Waiting...")
@@ -48,7 +48,7 @@ def main():
        if (result > 0.5):
          st.write('The Plant Leaf Is Diseased')
        else:
-         st.write('The plant Leaf Is Healthy')
+         st.write('The Plant Leaf Is Healthy')
          
      if st.button('Multiclass Classification'):
        result = pred2(image)
