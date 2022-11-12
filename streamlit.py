@@ -50,7 +50,7 @@ def main():
        else:
          st.write('Healthy')
          
-      if st.button('Multi Class Classification'):
+     if st.button('Multi Class Classification'):
        result = pred2(image)
 
        st.write(result)
