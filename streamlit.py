@@ -29,9 +29,7 @@ def pred2(image):
    test_image=np.expand_dims(test_image, axis=0)
    predictions=model2.predict(test_image)
    #st.write(predictions[0])
-  class_names=['Tomato__Bacterial_spot', 'Tomato_Early_blight', 'Tomato_Late_blight', 'Tomato_Leaf_Mold', 'Tomato_Septoria_leaf_spot',
-               'Tomato_Spider_mites Two-spotted_spider_mite', 'Tomato_Target_Spot', 'Tomato_Tomato_Yellow_Leaf_Curl_Virus', 
-               'Tomato_Tomato_mosaic_virus', 'Tomato__healthy']
+  class_names=['Tomato__Bacterial_spot', 'Tomato_Early_blight', 'Tomato_Late_blight', 'Tomato_Leaf_Mold', 'Tomato_Septoria_leaf_spot','Tomato_Spider_mites Two-spotted_spider_mite', 'Tomato_Target_Spot', 'Tomato_Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_Tomato_mosaic_virus', 'Tomato__healthy']
 
    return class_names[np.argmax(predictions)]
 
