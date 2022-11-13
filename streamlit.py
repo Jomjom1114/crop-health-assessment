@@ -21,7 +21,7 @@ def pred(image):
    return predictions[0]
 
 def pred2(test_image):
-   st.image(image)
+   st.image(test_image)
    #shape=((256,256,3))
    #test_image = image.resize((256,256))
    #test_image= tf.keras.preprocessing.image.img_to_array(test_image)
