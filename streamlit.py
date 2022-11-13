@@ -20,7 +20,7 @@ def pred(image):
    #st.write(predictions[0])
    return predictions[0]
 
-def pred2(image):
+def pred2(test_image):
    st.image(image)
    #shape=((256,256,3))
    #test_image = image.resize((256,256))
