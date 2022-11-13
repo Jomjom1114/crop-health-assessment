@@ -29,9 +29,9 @@ def pred2(test_image):
    test_image=np.expand_dims(test_image, axis=0)
    predictions=model2.predict(test_image)
    #st.write(predictions[0])
-   class_names=['Tomato__Bacterial_spot', 'The Plant Leaf has Tomato Late Early Disease', 'The Plant Leaf has Tomato Late Blight Disease', 'Tomato_Leaf_Mold', 
+   class_names=['Tomato__Bacterial_spot', 'The Leaf Has Tomato Late Early Disease', 'The Leaf Has Tomato Late Blight Disease', 'Tomato_Leaf_Mold', 
                'Tomato_Septoria_leaf_spot','Tomato_Spider_mites Two-spotted_spider_mite', 'Tomato_Target_Spot',
-               'Tomato_Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_Tomato_mosaic_virus', 'The Plant Leaf Is Healthy']
+               'Tomato_Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_Tomato_mosaic_virus', 'The Leaf Is Healthy']
 
    return class_names[np.argmax(predictions)]
 
@@ -48,9 +48,9 @@ def main():
      if st.button('Binary Classification'):
        result = pred(image)
        if (result > 0.5):
-         st.write('The Plant Leaf Is Diseased')
+         st.write('The Leaf Is Diseased')
        else:
-         st.write('The Plant Leaf Is Healthy')
+         st.write('The Leaf Is Healthy')
          
      if st.button('Multiclass Classification'):
        result = pred2(image)
