@@ -47,7 +47,7 @@ def main():
      image = Image.open(file)
      if st.button('Binary Classification'):
        result = pred(image)
-       if (result > 0.5):
+       if (result >= 0.6):
          st.write('The Leaf Is Diseased')
        else:
          st.write('The Leaf Is Healthy')
