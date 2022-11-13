@@ -22,10 +22,10 @@ def pred(image):
 
 def pred2(image):
    st.image(image)
-   shape=((256,256,3))
-   test_image = image.resize((256,256))
-   test_image= tf.keras.preprocessing.image.img_to_array(test_image)
-   test_image= test_image/255.0
+   #shape=((256,256,3))
+   #test_image = image.resize((256,256))
+   #test_image= tf.keras.preprocessing.image.img_to_array(test_image)
+   #test_image= test_image/255.0
    test_image=np.expand_dims(test_image, axis=0)
    predictions=model2.predict(test_image)
    #st.write(predictions[0])
