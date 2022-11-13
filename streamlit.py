@@ -6,7 +6,7 @@ import numpy as np
 import tensorflow as tf
 
 model = load_model('model3.h5')
-model2 = load_model('multimodel1.h5')
+model2 = load_model('modellast.h5')
 
 
 def pred(image):
