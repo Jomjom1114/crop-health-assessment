@@ -17,7 +17,7 @@ def pred(image):
    test_image= test_image/255.0
    test_image=np.expand_dims(test_image, axis=0)
    predictions=model.predict(test_image)
-   st.write(predictions[0])
+   #st.write(predictions[0])
    return predictions[0]
 
 def pred2(image):
@@ -28,7 +28,7 @@ def pred2(image):
    test_image= test_image/255.0
    test_image=np.expand_dims(test_image, axis=0)
    predictions=model2.predict(test_image)
-   st.write(predictions[0])
+   #st.write(predictions[0])
    class_names=['Tomato_Early_blight', 'Tomato_Late_blight', 'Tomato_healthy']
 
    return class_names[np.argmax(predictions)]
